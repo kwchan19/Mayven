@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.mayven.mayven.HomeFragment">
+
+    <TextView
+        android:id="@+id/isEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="There is nothing here. Be the first one to post!"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/linearPost"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="#60b0f4"
+        android:orientation="horizontal" />
+
+
+
+    <ImageView
+        android:id="@+id/flameIcon"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_flamewhite" />
+
+    <ImageView
+        android:id="@+id/floatbutton"
+
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="20dp"
+        android:cropToPadding="true"
+
+        android:src="@drawable/ic_square_and_pencil" />
+
+    <ImageView
+        android:id="@+id/companyName"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        app:backgroundTint="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/mayven_icon"
+        />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/companyName"
+
+        android:layout_centerInParent="true"
+        app:checkedButton="@id/btnAll"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        android:gravity="center" >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAll"
+            style="@style/ToggleButtonGroupStyle"
+            app:cornerRadius="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="All" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProgram"
+            app:cornerRadius="0dp"
+            style="@style/ToggleButtonGroupStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+             />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toggleGroup"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="-6dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycling"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/toggleGroup"
+            android:nestedScrollingEnabled="false"
+            android:visibility="gone"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

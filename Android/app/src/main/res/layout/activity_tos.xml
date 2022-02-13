@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.mayven.mayven.tos">
+    <RelativeLayout
+        android:background="#60b0f4"
+        android:layout_width="match_parent"
+        android:id="@+id/layout"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/TextViewGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms Of Service"
+            android:textStyle="bold"
+            android:layout_marginLeft="120dp"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/gnt_white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#60b0f4"
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_marginRight="70dp"
+            android:layout_height="wrap_content"
+            android:text="I agree to the terms of service"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#000"
+            android:textSize="13sp"
+            android:textColor="@color/gnt_white"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/layout"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text"
+        />
+    </ScrollView>
+
+</RelativeLayout>

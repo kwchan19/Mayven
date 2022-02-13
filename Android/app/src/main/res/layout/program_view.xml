@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#71B0EE"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:id="@+id/schoolName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gnt_white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Seneca College" />
+
+    <EditText
+        android:id="@+id/program"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/schoolName"
+        android:hint="Program"
+        android:gravity="center"
+        android:background="@color/gnt_white"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="45dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/classOf"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/program"
+        android:hint="Year Entered"
+        android:gravity="center"
+        android:background="@color/gnt_white"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="45dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/classOf"
+        android:hint="Name"
+        android:gravity="center"
+        android:background="@color/gnt_white"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="45dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/name"
+        android:hint="Username"
+        android:gravity="center"
+        android:background="@color/gnt_white"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="45dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_below="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/black"
+        android:text="Next" />
+</RelativeLayout>

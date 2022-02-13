@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ECECEC"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:id="@+id/listrow">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            app:civ_circle_background_color="#E4E4E4" />
+
+        <ImageView
+            android:id="@+id/tripleDot"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_horiz_24"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/profilePic"
+            android:maxLines="1"
+            android:text="userName"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:text="test" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="@color/mayvenBlue"
+            android:layout_below="@+id/post"
+            android:textSize="12sp"
+            android:text="time" />
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/post"
+            android:layout_marginTop="24dp"
+            app:tint="@color/mayvenBlue"
+            android:src="@drawable/ic_heart" />
+
+        <TextView
+            android:id="@+id/REPLY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#737373"
+            android:gravity="left"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/heart"
+            android:text="reply" />
+
+    </RelativeLayout>
+</LinearLayout>

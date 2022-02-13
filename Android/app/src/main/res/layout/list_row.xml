@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:id="@+id/listrow">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            app:civ_circle_background_color="#E4E4E4" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/profilePic"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:text="userName"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/tripleDot"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_horiz_24"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/post"
+            android:layout_marginTop="24dp"
+            app:tint="@color/mayvenBlue"
+            android:src="@drawable/ic_heart" />
+
+        <TextView
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@+id/userName"
+            android:layout_marginTop="25dp"
+            android:maxLines="3"
+            android:text="testwd " />
+
+        <TextView
+            android:id="@+id/REPLY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#737373"
+            android:gravity="left"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/heart"
+            android:text="reply" />
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/heart"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="111111"
+            android:textSize="12sp"
+            android:textColor="@color/mayvenBlue" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post"
+            android:textSize="12sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:text="time"
+            android:textColor="@color/mayvenBlue" />
+
+
+    </RelativeLayout>
+</LinearLayout>

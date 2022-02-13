@@ -1,0 +1,27 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimary">#60B0F4</item>
+        <item name="colorPrimaryDark">@color/gnt_black</item>
+        <item name="colorAccent">@color/gnt_black</item>
+    </style>
+
+    <style name="ToggleButtonGroupStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@animator/selector</item>
+        <item name="backgroundTint">@animator/selector_text</item>
+        <item name="background">@color/gnt_white</item>
+        <item name="android:radius">0dp</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="ExitButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/redAction</item>
+        <item name="background">@color/redAction</item>
+    </style>
+</resources>

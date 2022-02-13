@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Create a Group"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/mayvenBlue"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_below="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_above="@+id/name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="17dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/msg_input"
+            android:text="Add Group"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/msg_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profilePic"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="15sp"
+            android:hint="Group Name Here" />
+    </RelativeLayout>
+</RelativeLayout>

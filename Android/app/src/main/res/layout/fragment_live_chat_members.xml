@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LiveChatMembersFragment">
+
+    <ImageView
+        android:id="@+id/tripleDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_horiz_24"
+        android:layout_marginTop="13.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="1"
+        android:text="groupName"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="46dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        app:tint="@color/mayvenBlue"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/groupPic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/addImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/groupPic"
+        android:layout_alignRight="@+id/groupPic"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_launcher_plus_image"/>
+
+    <TextView
+        android:id="@+id/members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Members"
+        android:layout_below="@+id/groupPic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/add_members"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/groupPic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/members"
+        android:src="@drawable/ic_add"
+        android:padding="2dp"
+        app:tint="@color/mayvenBlue" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycle"
+        android:layout_below="@+id/groupPic"
+        android:layout_marginTop="40dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mayven</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="username">userName</string>
+    <string name="test_what_text_should_look_like">test what text should look like</string>
+</resources>
